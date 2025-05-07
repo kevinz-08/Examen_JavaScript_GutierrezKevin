@@ -1,1 +1,2 @@
-let datos = JSON.parse()
+document.getElementById('formulario').addEventListener('submit', function(e) {
+    e.preventDefault();

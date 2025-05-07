@@ -72,3 +72,14 @@ header .links a {
     width: 200px;
     height: 100px;
 }
+.enviar{
+    margin-right: 40px;
+}
+.enviar button{
+    width: 200px;
+    height: 70px;
+    background-color: rgb(127, 136, 255);
+    color: white;
+    border: none;
+    font-family: "anybody";
+}
