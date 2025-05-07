@@ -9,4 +9,8 @@ document.getElementById('formulario').addEventListener('submit', function(e) {
     };
 
     let eventosGuardados = JSON.parse(localStorage.getItem('eventos')) || [];
+    eventosGuardados.push(nuevoEvento);
+    localStorage.setItem('eventos', JSON.stringify(eventosGuardados));
+
+    e.target.reset();
   });
