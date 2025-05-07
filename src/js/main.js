@@ -1,6 +1,6 @@
 document.getElementById('formulario').addEventListener('submit', function(e) {
 
-    const evento = {
+    const nuevoevento = {
       nombre: document.getElementById('nombreEvento').value,
       lugar: document.getElementById('lugar').value,
       fechaInicio: document.getElementById('fechaInicio').value,
@@ -8,6 +8,5 @@ document.getElementById('formulario').addEventListener('submit', function(e) {
       horario: document.getElementById('horario').value
     };
 
-
-    localStorage.setItem('eventoGuardado', JSON.stringify(evento));
+    let eventosGuardados = JSON.parse(localStorage.getItem('eventos')) || [];
   });
