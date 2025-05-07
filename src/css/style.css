@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+@font-face {
+    font-family: "gulfs-display";
+    src: url(../fonts/GulfsDisplay-Normal.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "anybody";
+    src: url(../fonts/Anybody-Black.ttf);
+}
+header {
+    background-color: rgb(6, 134, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+header .tittle {
+    width: auto;
+    height: auto;
+    margin-left: 30px;
+}
+header div h1 {
+ font-family: "gulfs-display";
+ display: flex;
+ font-size: 50px;
+ color: white;
+}
+header .links {
+    width: auto;
+    height: auto;
+    margin-right: 15px;
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+header .links a {
+    text-decoration: none;
+    color: white;
+    font-family: "anybody";
+}
+header .links a:hover {
+    color: rgb(6, 134, 255);
+}
+main .section1-box {
+    background-color: rgb(6, 134, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "anybody";
+    height: auto;
+    margin: 5%;
+    padding: 2%;
+    border-radius: 10px;
+}
+main .section1-box .tittle-description h1{
+    color: white;
+    font-size: 40px;
+}
+main .section1-box .buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+main .section1-box button {
+    font-family: "anybody";
+    color: rgb(252, 252, 252);
+    font-size: 20px;
+    background-color: rgb(0, 89, 255);
+    border: none;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+}
+main .section1-box button a {
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+}
+main .description {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "anybody";
+}
+main .description .caracteristicas-principales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 40px;
+}
+main .description .caracteristicas-principales h1 {
+    font-size: 40px;
+}
+main .description .caracteristicas-principales p {
+    font-family: sans-serif;
+    font-weight: 600;
+}
+main .description .containers {
+    display: flex;
+    gap: 20px;
+}
+main .description .containers div {
+    border: solid 3px white;
+    border-radius: 12px;
+    background-color: rgb(6, 134, 255);
+}
+main .description .containers .gestion, .directorio, .catalogo, .visibilidad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .description .containers h1 {
+    font-size: 20px;
+    color: white;
+}
+main .description .containers p {
+    font-family: sans-serif;
+    font-weight: 600;
+}
